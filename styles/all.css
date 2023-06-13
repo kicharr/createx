@@ -1,0 +1,53 @@
+:root {
+    --main-text-color: #424551;
+    --main-title-color: #1E212C;
+    --main-orange-color: #FF5A30;
+}
+
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url(../assets/fonts/ubuntu/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url(../assets/fonts/ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: url(../assets/fonts/ubuntu/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: url(../assets/fonts/ubuntu/Ubuntu-Bold.ttf);
+}
+
+
+
+*,
+*+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Ubuntu Regular', sans-serif;
+}
+
+body {
+    box-sizing: inherit;
+    color: var(--main-text-color);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--main-title-color);
+}
+
+.container {
+    
+}
