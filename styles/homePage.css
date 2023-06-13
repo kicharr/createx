@@ -146,7 +146,7 @@ main {
 
 /* ABOUT */
 .about {
-    margin: 390px 0 180px;
+    margin: 390px 0 100px;
 }
 
 .video__wrapper {
@@ -200,6 +200,11 @@ main {
     max-width: 285px;
     width: 100%;
     height: 188px;
+    transition: all .3s linear;
+}
+
+.values-card:hover {
+    transform: scale(1.2);
 }
 
 .values-card-icon {
@@ -247,10 +252,6 @@ main {
 }
 
 @media (max-width: 1230px) {
-    .header-content__right {}
-
-    .header-nav__list {}
-
     .header-contact__item {
         gap: 10px;
         margin-right: 15px;
@@ -298,6 +299,10 @@ main {
 
     .section-title__wrapper {
         margin-bottom: 40px;
+    }
+
+    .video-img {
+        height: 400px;
     }
 
 }
