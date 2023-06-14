@@ -34,9 +34,10 @@
 }
 
 body {
-    box-sizing: inherit;
+    box-sizing: border-box;
     color: var(--main-text-color);
     overflow-x: hidden;
+    height: 10000px;
 }
 
 h1,
@@ -209,3 +210,117 @@ a:hover {
     margin-bottom: 60px;
 }
 
+.section-left-title__wrapper h2 {
+    text-align: start;
+}
+
+
+/* FOOTER form */
+.footer-form__wrapper {
+    position: relative;
+}
+
+.footer-bg__img {
+    position: absolute;
+    top: -5vw;
+    left: 0;
+    z-index: -1;
+    background-image: url(../assets/images/footer-form-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 826px;
+}
+
+.footer-form {
+    max-width: 495px;
+    width: 100%;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E5E8ED;
+
+    box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    border-radius: 4px;
+    margin: 0 0 0 auto;
+
+    padding: 48px 40px;
+}
+
+.footer-form__title h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+
+    text-align: center;
+    color: var(--main-title-color);
+    margin-bottom: 24px;
+}
+
+.separate-data__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.separate-data-checkbox__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-form-btn {
+    margin: 0 auto;
+}
+
+.footer-form__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #424551;
+}
+
+.footer-form input,
+textarea {
+    background: #F4F5F7;
+    resize: none;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+
+
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main-title-color);
+    line-height: 150%;
+
+    padding: 11px 0 12px 16px;
+}
+
+.footer-form input,
+textarea:focus-visible {
+    outline: none;
+}
+
+.separate-data__wrapper {
+    margin-bottom: 20px;
+}
+
+.separate-data__wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.footer-input__Message {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+
+input[type=checkbox] {
+    background-color: #FF5A30;
+}
+
+
+
+/* FOOTER */
