@@ -888,10 +888,6 @@ main {
 }
 
 @media (max-width: 1130px) {
-    .header-content__right {
-        /* display:    ; */
-    }
-
     .header-nav__list {
         display: none;
     }
@@ -1110,43 +1106,110 @@ main {
         flex-direction: column;
     }
 
+    .news-title__wrapper a {
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    .small-news .news-data__wrapper {
+        display: none;
+    }
+
+    .big-news-description__wrapper {
+        padding: 16px 5px 25px;
+    }
+
     .values-card__wrapper {
         gap: 10px;
         flex-direction: column;
     }
+
     .card-separator {
         transform: rotate(180deg);
     }
+
     .form-question__button {
         line-height: 0;
     }
+
     .header-contact__item a {
         font-size: 10px;
     }
+
     .header-content-call {
         font-size: 12px;
     }
+
     .header-content__right {
         font-size: 10px;
     }
+
     .header-contact__item img {
         max-width: 30px;
+    }
+
+    .call-text {
+        font-size: 16px;
     }
 }
 
 @media (max-width: 550px) {
     .header-content__left {
-        margin-right: 0; 
+        margin-right: 0;
     }
-    .header-logo__wrapper  {
-        margin-right: 0; 
+
+    .header-logo__wrapper {
+        margin-right: 0;
+    }
+
+    .main-btn {
+        max-width: 100%;
+    }
+
+    .video-img {
+        height: 200px;
+    }
+
+    .video-img__play {
+        width: 40px;
+        height: 40px;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+    }
+
+    .video-img__controls {
+        width: 20px;
+        height: 20px;
+        bottom: calc(10% - 10px);
+        left: calc(5% - 10px);
+    }
+
+    .form-question__wrapper {
+        padding: 24px 30px;
+        margin: 0 auto 120px;
+        max-width: 1230px;
+        width: 100%;
+    }
+    
+    .call-wrapper {
+        flex-direction: column;
+    }
+
+    .main-buttons__wrapper {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-wrapper__content {
+        padding-top: 100px;
     }
 
 }
 
 
 @media (max-width: 425px) {
-    .header-wrapper{
+    .header-wrapper {
         flex-direction: column;
         gap: 10px;
         text-align: center;
