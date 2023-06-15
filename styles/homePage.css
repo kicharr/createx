@@ -1190,7 +1190,7 @@ main {
         max-width: 1230px;
         width: 100%;
     }
-    
+
     .call-wrapper {
         flex-direction: column;
     }
@@ -1215,4 +1215,7 @@ main {
         text-align: center;
     }
 
+    .about {
+        margin: 190px 0 60px;
+    }
 }
