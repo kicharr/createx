@@ -29,7 +29,7 @@
 *,
 *+* {
     box-sizing: border-box;
-    font-size: 16px;
+    /* font-size: 16px; */
     font-family: 'Ubuntu Regular', sans-serif;
 }
 
@@ -198,6 +198,7 @@ a:hover {
     margin-bottom: 24px;
 }
 
+
 .section-title__wrapper {
     font-weight: 400;
     font-size: 18px;
@@ -212,6 +213,8 @@ a:hover {
 .section-left-title__wrapper h2 {
     text-align: start;
 }
+
+
 
 
 /* FOOTER form */
@@ -320,6 +323,28 @@ input[type=checkbox] {
     background-color: #FF5A30;
 }
 
+@media (max-width: 1130px) {
+    .section-title__wrapper h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 130%;
+
+        text-align: center;
+
+        color: var(--main-title-color);
+        margin-bottom: 10px;
+    }
+
+    .section-title__wrapper {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .footer-form {
+        max-width: 395px;
+        margin: 0 auto;
+    }
+}
 
 
 /* FOOTER */

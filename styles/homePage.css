@@ -896,11 +896,11 @@ main {
     }
 
     .about {
-        margin: 190px 0 60px;
+        margin: 140px  0 60px;
     }
 
     .main-title__wrapper h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .accent {
@@ -908,13 +908,16 @@ main {
     }
 
     .main-title__description {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 40px;
     }
 
     .main-btn {
-        padding: 10px 30px;
-        font-size: 14px;
+        max-width: 150px;
+        width: 100%;
+        font-size: 10px;
+        padding: 10px;
+        display: block;
     }
 
     .slider-item__image {
@@ -929,4 +932,165 @@ main {
         height: 400px;
     }
 
+    .form-question__wrapper {
+        max-width: 485px;
+        width: 100%;
+        margin: 0 auto 80px;
+    }
+
+    .form-input__wrapper {
+        margin-right: 0;
+    }
+
+    .form-btn__wrapper {
+        margin: 0 auto;
+    }
+
+    .services-bg__img {
+        top: -5vw;
+        height: 1826px;
+    }
+
+    .form-question {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .form-question__input-message {
+        min-width: 260px;
+        width: 100%;
+    }
+
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    .services-card__item {
+        max-width: 250px;
+        min-width: auto;
+        width: 100%;
+        height: 200px;
+        margin-right: 0;
+        padding: 40px 0 45px;
+
+    }
+
+    .bg-sevrices-card__img {
+        display: none;
+    }
+
+    .services-card__item:hover {
+        transform: scale(1);
+    }
+
+
+    .services-card__item:hover .services-card__icon {
+        background-image: url('../assets/icons/project-dev.svg');
+    }
+
+    .services-card__item:nth-child(2):hover .second-services-card__icon {
+        background-image: url('../assets/icons/project-dev.svg');
+    }
+
+    .services-card__item:nth-child(3):hover .third-services-card__icon {
+        background-image: url('../assets/icons/interior-design.svg');
+    }
+
+    .services-card__item:nth-child(4):hover .fouth-services-card__icon {
+        background-image: url('../assets/icons/repairs.svg');
+    }
+
+    .services-card__item:hover .services-card__description {
+        color: var(--main-title-color);
+    }
+
+    .services__wrapper {
+        margin-bottom: 100px;
+    }
+
+    .portfolio-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-card {
+        max-width: 350px;
+        min-height: unset;
+        width: 100%;
+        min-width: auto;
+    }
+
+    .portfolio-card__button {
+        padding: 0;
+    }
+
+    .call-text {
+        font-size: 20px;
+    }
+
+    .report-main-photo {
+        display: none;
+    }
+
+    .reports-content {
+        justify-content: center;
+    }
+
+    .reports-bg__img {
+        height: 790px;
+    }
+
+    .circles__wrapper {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pie {
+        --w: 100px;
+    }
+
+    .separate-circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facts {
+        margin-bottom: 80px;
+    }
+
+    .news-wrapper {
+        flex-direction: column;
+    }
+
+    .small-news__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .big-news {
+        max-width: 100vw;
+        width: 100%;
+    }
+
+    .small-news {
+        max-width: 40vw;
+        width: 100%;
+    }
+
+    .slick-list {
+        height: 600px;
+    }
+
+    .news {
+        margin-bottom: 80px;
+    }
 }
