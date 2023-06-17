@@ -92,7 +92,7 @@
     margin-bottom: 260px;
 }
 
-/* .services-card__left {
+.services-card__left {
     position: relative;
     right: 10000px;
 }
@@ -100,7 +100,7 @@
 .services-card__right {
     position: relative;
     left: 10000px;
-} */
+}
 
 .show-services-cards__left {
     animation: showServicesCardLeft 2s forwards alternate;
@@ -109,8 +109,6 @@
 .show-services-cards__right {
     animation: showServicesCardRight 2s forwards alternate;
 }
-
-
 
 .services-card__title h4 {
     font-weight: 700;

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/all.css">
+
+    <link rel="stylesheet" href="./styles/work.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="main-header">
+        <div class="header-bg__img"></div>
+        <div class="header-wrapper container">
+            <div class="header-content__left">
+                <div class="header-logo__wrapper">
+                    <a href="./Home.html"> <img src="./assets/icons/header-logo.svg" alt="Company logotype"></a>
+                </div>
+                <nav class="header-nav__wrapper">
+                    <ul class="header-nav__list">
+                        <li>
+                            <a class="header-nav__link" href="./About.html">About Us</a>
+                        </li>
+                        <li>
+                            <a id="servicesPageId" class="header-nav__link" href="./services.html">Services</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="./Work.html">Work</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="./News.html">News</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="./Contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-content__right">
+                <div class="header-contact__item">
+                    <img src="./assets/icons/header-phone.svg">
+                    <div class="header-contact__item-content">
+                        <p class="header-content-call">
+                            Call us
+                        </p>
+                        <a href="tel:+(405) 555-0128">(405) 555-0128</a>
+                    </div>
+                </div>
+                <div class="header-contact__item">
+                    <img src="./assets/icons/header-chat.svg">
+                    <div class="header-contact__item-content">
+                        <p class="header-content-call">
+                            Talk to us
+                        </p>
+                        <a href="mailto:hello@createx.com">hello@createx.com</a>
+                    </div>
+                </div>
+                <div class="header-menu__mobile">
+                    <div id="mobileLink" class="header-burger__btn" href="#">
+                        <span></span>
+                    </div>
+
+                    <nav id="mobileMenu" hidden class="header-nav__wrapper__mobile">
+                        <ul class="header-nav__list">
+                            <li>
+                                <a class="header-nav__link" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="header-nav__link" href="./services.html">Services</a>
+                            </li>
+                            <li>
+                                <a class="header-nav__link" href="#">Work</a>
+                            </li>
+                            <li>
+                                <a class="header-nav__link" href="#">News</a>
+                            </li>
+                            <li>
+                                <a class="header-nav__link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__wrapper container">
+            <ul class="breadcrumbs-wrapper">
+                <li>
+                    <a class="breadcrumbs-link breadcrumbs-link__main" href="./Home.html">Homepage</a>
+                </li>
+                <li class="breadcrumbs-link__current">
+                    /
+                </li>
+                <li>
+                    <a class="breadcrumbs-link breadcrumbs-link__current" href="#">Work</a>
+                </li>
+            </ul>
+            <section class="main-wrapper__content">
+                <div class="main-title__wrapper">
+                    <h1>
+                        OUR WORK
+                    </h1>
+                </div>
+                <p class="main-title__description">
+                    Our portfolio represents 20 years of construction experience <br> backed by a passion for perfect
+                    client service, quality and <br> innovations in consctuction industry.
+                </p>
+            </section>
+            <section class="services-cards__wrapper">
+                <div class="services-cards">
+
+                    <div class="services-card__item services-card__item__all-project">
+                        <a class="services-card__link" href="#">
+                            <div class="services-card__icon services-card__icon-all-project"></div>
+                            <!-- <img class="bg-sevrices-card__img"
+                                src="./assets/images/servieces-bg-card-image-constaction.jpg" alt="Card Background"> -->
+                            <p class="services-card__description">
+                                App Projects
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="services-card__item ">
+                        <a class="services-card__link" href="#">
+                            <div class="services-card__icon"></div>
+                            <img class="bg-sevrices-card__img"
+                                src="./assets/images/servieces-bg-card-image-constaction.jpg" alt="Card Background">
+                            <p class="services-card__description">
+                                Construction
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="services-card__item">
+                        <a class="services-card__link" href="#">
+                            <div class="services-card__icon second-services-card__icon"></div>
+                            <img class="bg-sevrices-card__img"
+                                src="./assets/images/servieces-bg-card-image-project-dev.jpg" alt="Card Background">
+                            <p class="services-card__description">
+                                Project Development
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="services-card__item">
+                        <a class="services-card__link" href="#">
+                            <div class="services-card__icon third-services-card__icon"></div>
+                            <img class="bg-sevrices-card__img" src="./assets/images/servieces-bg-card-image.jpg"
+                                alt="Card Background">
+                            <p class="services-card__description">
+                                Interior Design
+                            </p>
+                        </a>
+
+                    </div>
+
+                    <div class="services-card__item">
+                        <a class="services-card__link" href="#">
+                            <div class="services-card__icon fouth-services-card__icon"></div>
+                            <img class="bg-sevrices-card__img" src="./assets/images/servieces-bg-card-image-repairs.jpg"
+                                alt="Card Background">
+                            <p class="services-card__description">
+                                Repairs
+                            </p>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </section>
+            <section class="work__wrapper">
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-1.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            Red Finger Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Business Centers
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-2.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            Cubes Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Business Centers
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-3.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            The Pencil Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Stores & Malls
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-1.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            Red Finger Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Business Centers
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-2.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            Cubes Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Business Centers
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-3.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            The Pencil Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Stores & Malls
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-1.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            Red Finger Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Business Centers
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-2.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            Cubes Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Business Centers
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <img class="portfolio-card__image" src="./assets/images/portfolio-slide-3.jpg" alt="Portfolio">
+                    <div class="portfolio-card__text">
+                        <p class="portfolio-card__title">
+                            The Pencil Building
+                        </p>
+                        <p class="portfolio-card__description">
+                            Stores & Malls
+                        </p>
+                        <button class="main-btn portfolio-card__button">
+                            <a href="#">
+                                View Project
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="load-more-button__wrapper">
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrapper container">
+            <div class="footer-row__info">
+                <div class="footer-row-info__left">
+                    <div class="footer-row-info__left__content">
+                        <div class="footer-logo__social__icons">
+                            <div class="footer-logo__wrapper">
+                                <img src="./assets/icons/footer-logo-white.svg" alt="Logo">
+                            </div>
+                            <ul class="footer-social-icons__wrapper">
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/icons/whatsapp.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social__link" href="#">
+                                        <img src="./assets/icons/messanger.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social__link" href="#">
+                                        <img src="./assets/icons/facebook.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social__link" href="#">
+                                        <img src="./assets/icons/twitter.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social__link" href="#">
+                                        <img src="./assets/icons/youtube.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="footer-row-info__left__content__text">
+                            Createx Construction Bureau has been successfully operating in the USA <br> construction
+                            market since 2000. We are proud to offer you quality <br> construction and exemplary
+                            service. Our mission is to set the highest <br> standards for construction sphere.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-row-info__right">
+                    <div class="footer-title__wrapper">
+                        <h4>Let’s stay in touch</h4>
+                    </div>
+                    <div class="footer-input__wrapper">
+                        <input id="footerInput" class="footer-input" placeholder="Your email address " type="text">
+                        <input type="button" value="subscribe" class="footer-input__button">
+                    </div>
+                    <p class="footer-input-wrapper__description">
+                        *Subscribe to our newsletter to receive communications and early updates from Createx <br>
+                        Construction Bureau.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-row__links">
+                <div class="footer-row__first-column">
+                    <p class="first-column__tilte footer-row-column__title">
+                        HEAD OFFICE
+                    </p>
+                    <ul class="footer-column__list">
+                        <li>
+                            <span class="footer-clumn-list__info__tilte">
+                                Address:
+                            </span>
+                            <p class="footer-clumn-list__info">
+                                8502 Preston Rd. Inglewood, New York
+                            </p>
+                        </li>
+                        <li>
+                            <span class="footer-clumn-list__info__tilte">
+                                Call:
+                            </span>
+                            <p class="footer-clumn-list__info">
+                                (405) 555-0128
+                            </p>
+                        </li>
+                        <li>
+                            <span class="footer-clumn-list__info__tilte">
+                                Email:
+                            </span>
+                            <p class="footer-clumn-list__info">
+                                hello@createx.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-row__first-column">
+                    <p class="first-column__tilte footer-row-column__title">
+                        WHO WE ARE
+                    </p>
+                    <ul class="footer-column__list">
+                        <li>
+                            <a class="footer-column__link" href="./About.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="footer-column__link" href="#">Available Positions</a>
+                        </li>
+                        <li>
+                            <a class="footer-column__link" href="./Contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-row__first-column">
+                    <p class="first-column__tilte footer-row-column__title">
+                        OUR EXPERIENCE
+                    </p>
+                    <ul class="footer-column__list">
+                        <li>
+                            <a class="footer-column__link" href="./services.html">Services</a>
+                        </li>
+                        <li>
+                            <a class="footer-column__link" href="./work.html">Work</a>
+                        </li>
+                        <li>
+                            <a class="footer-column__link" href="./News.html">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-row__copyright">
+                <p class="copyright__text">
+                    © All rights reserved. Made with
+                    <span>
+                        <img src="./assets/icons/copyright-icon.svg">
+                    </span>
+                    by Createx Studio
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

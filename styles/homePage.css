@@ -541,8 +541,6 @@ main {
     height: 345px;
 }
 
-
-
 .portfolio-card__title {
     font-weight: 700;
     font-size: 20px;
@@ -579,7 +577,6 @@ main {
     visibility: hidden; */
     transition: all .5s linear;
 }
-
 
 .portfolio-card__button a {
     font-size: 14px;
