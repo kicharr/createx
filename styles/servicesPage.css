@@ -94,12 +94,12 @@
 
 .services-card__left {
     position: relative;
-    right: 10000px;
+    right: 100vw;
 }
 
 .services-card__right {
     position: relative;
-    left: 10000px;
+    left: 100vw;
 }
 
 .show-services-cards__left {
@@ -134,7 +134,7 @@
 
 @keyframes showServicesCardLeft {
     from {
-        right: 10000px;
+        right: 100vw;
     }
 
     to {
@@ -144,7 +144,7 @@
 
 @keyframes showServicesCardRight {
     from {
-        left: 10000px;
+        left: 100vw;
     }
 
     to {
@@ -196,6 +196,22 @@
 
     .services-card {
         gap: 40px;
+    }
+
+    .services-card__left {
+        right: 0;
+    }
+
+    .services-card__right {
+        left: 0;
+    }
+
+    .show-services-cards__left {
+        animation: none;
+    }
+    
+    .show-services-cards__right {
+        animation: none;
     }
 }
 
@@ -263,9 +279,11 @@
     .services-card__img {
         display: none;
     }
+
     .services-card__title {
         text-align: center;
     }
+
     .main-btn__orange {
         margin: 0 auto;
     }

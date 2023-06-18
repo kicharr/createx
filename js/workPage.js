@@ -7,4 +7,7 @@ document.getElementById('loaderWrapper').addEventListener('click', () => {
     document.getElementById('loaderCircle').classList.add('loader_active')
 })
 
-console.log();
+let currentUrl = window.location.href.split('/');
+let workPageId = document.getElementById('workPageId');
+currentUrl[3] === 'Services.html' ? workPageId.classList.add('header-nav__active') : workPageId
+    .classList.add('header-nav__active');
