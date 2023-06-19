@@ -92,14 +92,19 @@
     margin-bottom: 260px;
 }
 
+.services-card__left:first-child {
+    position: relative;
+    right: 0;
+}
+
 .services-card__left {
     position: relative;
-    right: 100vw;
+    right: 5000px;
 }
 
 .services-card__right {
     position: relative;
-    left: 100vw;
+    left: 5000px;
 }
 
 .show-services-cards__left {
@@ -134,7 +139,7 @@
 
 @keyframes showServicesCardLeft {
     from {
-        right: 100vw;
+        right: 5000px;
     }
 
     to {
@@ -144,7 +149,7 @@
 
 @keyframes showServicesCardRight {
     from {
-        left: 100vw;
+        left: 5000px;
     }
 
     to {

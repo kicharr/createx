@@ -75,14 +75,14 @@ li {
     list-style-type: none;
 }
 
-a {
+/* a {
     color: var(--main-text-color);
     transition: all .1s linear;
 }
 
 a:hover {
     opacity: .7;
-}
+} */
 
 .container {
     max-width: 1250px;
@@ -147,6 +147,14 @@ a:hover {
 .header-nav__list {
     display: flex;
     align-items: center;
+}
+
+.header-nav__list a {
+ transition: .3s linear all;
+}
+
+.header-nav__list a:hover {
+    color: var(--main-orange-color);
 }
 
 .header-nav__list li {

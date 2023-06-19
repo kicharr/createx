@@ -198,7 +198,7 @@ main {
 
     margin: 0 auto 120px;
     max-width: 1230px;
-  
+
     width: 100%;
 }
 
@@ -431,6 +431,15 @@ main {
 
 .call-wrapper__btn {
     background-color: var(--main-orange-color);
+}
+
+.call-wrapper__btn a {
+    color: #FFFFFF;
+}
+
+.call-wrapper__btn a:hover {
+    color: var(--main-orange-color);
+    opacity: 1;
 }
 
 .call-wrapper__btn:hover {
