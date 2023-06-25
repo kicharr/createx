@@ -162,6 +162,7 @@
 .values-history__wrapper {
     background-color: #F4F5F7;
     padding: 80px 0;
+    margin: 0 0 140px;
 }
 
 .section-history-title__wrapper h2 {
@@ -261,3 +262,203 @@
 
 
 /* slider */
+
+/* partners */
+.sunset-card {
+    filter: grayscale(1);
+}
+
+.partners {
+    margin-bottom: 180px;
+}
+
+.partners-images__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+}
+
+.partner-card {
+    display: flex;
+    justify-content: center;
+    transition: all 2s lienar;
+}
+
+.partner-card:hover {
+    display: flex;
+    justify-content: center;
+    filter: grayscale(0);
+}
+
+.partner-card {
+    display: flex;
+    justify-content: center;
+    transition: all .3s linear;
+}
+
+.partner-card a {
+    transition: all .3s linear;
+}
+
+.partner-card a:hover {
+    transform: scale(1.2);
+
+}
+
+
+/* TEAM */
+
+.team-cards__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+
+    margin-bottom: 80px;
+}
+
+.team-card {
+    text-align: center;
+}
+
+.team-worker-name__wrapper {
+    margin-bottom: 4px;
+}
+
+.worker-name {
+    font-size: 20px;
+    color: var(--main-title-color);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.worker-position {
+    font-size: 16px;
+    color: #787A80;
+    line-height: 160%;
+}
+
+.team-worker-img__wrapper {
+    position: relative;
+    margin-bottom: 16px;
+    display: flex;
+    overflow: hidden;
+}
+
+.worker-image {
+    width: 285px;
+    height: 340px;
+}
+
+.social__wrapper {
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #FF5A30;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 0.7;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    transform: translateY(100px);
+
+    transition: all .2s linear;
+}
+
+.team-worker-img__wrapper:hover .social__wrapper {
+    transform: translateY(0);
+}
+
+.team-position__link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.position__link-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--main-title-color);
+}
+
+.available-positions {
+    color: var(--main-orange-color);
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    text-decoration-line: underline;
+}
+
+
+/* map */
+
+.map-worldwide {
+    margin-bottom: 220px;
+}
+
+.map-img__wrapper {
+    position: relative;
+}
+
+.map-country {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all .3s linear;
+   
+}
+
+.map-country:hover {
+    transform: scale(1.1);
+    /* animation: countriesActive infinite 1s alternate-reverse; */
+}
+
+/* @keyframes countriesActive {
+    form {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+} */
+
+.map-country__canada {
+    top: 23%;
+    left: 13%;
+    
+}
+
+.map-country__usa {
+    top: 36%;
+    left: 16%;
+}
+
+.map-country__germany {
+    top: 24%;
+    left: 48%;
+}
+
+.map-country__ukraine {
+    top: 30%;
+    left: 52%;
+}
+
+.map-country__china {
+    top: 41%;
+    left: 72%;
+}
+
+.map-country__australia {
+    top: 74%;
+    left: 80%;
+}
