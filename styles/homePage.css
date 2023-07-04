@@ -746,14 +746,7 @@ main {
     transform: scale(1.05);
 }
 
-.big-news__preview {
-    width: 100%;
-    margin-bottom: 24px;
-}
 
-.big-news-description__wrapper {
-    padding: 16px 24px 25px;
-}
 
 
 .news-title__wrapper a {
@@ -796,12 +789,7 @@ main {
     gap: 8px;
 }
 
-.big-news-card__description {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    color: #424551;
-}
+
 
 .news-card__link:hover .news-title__wrapper h4 {
     color: var(--main-orange-color);

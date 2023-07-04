@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="./assets/icons/favicon.svg">
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles//normalize.css">
+    <link rel="stylesheet" href="./styles/news.css">
+    <title>News - CreateX</title>
+</head>
+
+<body>
+    <header id="header" class="main-header">
+        <div id="header-bg__img" class="header-bg__img"></div>
+        <div class="header-wrapper container">
+            <div class="header-content__left">
+                <div class="header-logo__wrapper">
+                    <a href="./Home.html"> <img src="./assets/icons/header-logo.svg" alt="Company logotype"></a>
+                </div>
+                <nav class="header-nav__wrapper">
+                    <ul class="header-nav__list">
+                        <li>
+                            <a id="aboutPageId" class="header-nav__link" href="./About.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="./services.html">Services</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="./Work.html">Work</a>
+                        </li>
+                        <li>
+                            <a id="newsPageId" class="header-nav__link" href="./News.html">News</a>
+                        </li>
+                        <li>
+                            <a id="contactsPageId" class="header-nav__link" href="./Contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-content__right">
+                <div class="header-contact__item">
+                    <img src="./assets/icons/header-phone.svg">
+                    <div class="header-contact__item-content">
+                        <p class="header-content-call">
+                            Call us
+                        </p>
+                        <a href="tel:+(405) 555-0128">(405) 555-0128</a>
+                    </div>
+                </div>
+                <div class="header-contact__item">
+                    <img src="./assets/icons/header-chat.svg">
+                    <div class="header-contact__item-content">
+                        <p class="header-content-call">
+                            Talk to us
+                        </p>
+                        <a href="mailto:hello@createx.com">hello@createx.com</a>
+                    </div>
+                </div>
+                <div class="header-menu__mobile">
+                    <div id="mobileLink" class="header-burger__btn" href="#">
+                        <span></span>
+                    </div>
+
+                    <nav id="mobileMenu" hidden class="header-nav__wrapper__mobile">
+                        <ul class="header-nav__list">
+                            <li>
+                                <a class="header-nav__link" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="header-nav__link" href="./services.html">Services</a>
+                            </li>
+                            <li>
+                                <a class="header-nav__link" href="#">Work</a>
+                            </li>
+                            <li>
+                                <a class="header-nav__link" href="#">News</a>
+                            </li>
+                            <li>
+                                <a class="header-nav__link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="main__wrapper container">
+            <ul class="breadcrumbs-wrapper">
+                <li>
+                    <a class="breadcrumbs-link breadcrumbs-link__main" href="./Home.html">Homepage</a>
+                </li>
+                <li class="breadcrumbs-link__current">
+                    /
+                </li>
+                <li>
+                    <a class="breadcrumbs-link breadcrumbs-link__current" href="#">News</a>
+                </li>
+            </ul>
+            <section class="main-wrapper__content">
+                <div class="main-title__wrapper">
+                    <h1>
+                        NEWS
+                    </h1>
+                </div>
+                <p class="main-title__description">
+                    Stay tuned with our news, expert tips and articles.
+                </p>
+            </section>
+        </section>
+
+
+
+        <section class="news-list container">
+            <div class="section-title__wrapper">
+                <h2 onclick="checkFilter()">Categories</h2>
+            </div>
+
+            <div id="news-filter__nav" class="news-filter__nav">
+                <button id="allNews" class="news-filter-nav__button filter-btn__active" type="button">All News</button>
+                <button id="companyNews" class="news-filter-nav__button" type="button">Company News</button>
+                <button id="innovationNews" class="news-filter-nav__button" type="button">Innovation</button>
+                <button id="industryNews" class="news-filter-nav__button" type="button">Industry News</button>
+                <button id="expertNews" class="news-filter-nav__button" type="button">Expert Tips</button>
+                <button id="MarketingNews" class="news-filter-nav__button" type="button">Marketing</button>
+            </div>
+
+
+            <div id="newsCardWrapper" class="news-wrapper">
+                <div id="newsCard" class="big-news news-card">
+                    <img class="big-news__preview" src="./assets/images/big-news-homePage.jpg" alt="News image">
+                    <div class="big-news-description__wrapper">
+                        <div class="news-title__wrapper">
+                            <a id="newsCardName" href="#" class="news-card__link big-news-card__link ">
+                                How to Build Climate Change- Resilient Infrastructure
+                            </a>
+                        </div>
+                        <div class="news-data__wrapper">
+                            <p class="news-type__text">Industry News</p>
+                            <span></span> 
+                            <p class="news-date__text">June 24, 2020</p>
+                            <span></span>
+
+                            <div class="news-comments__wrapper">
+                                <img src="./assets/icons/comments.svg">
+                                <p class="news-type__text">4 comments</p>
+                            </div>
+
+                        </div>
+                        <p class="big-news-card__description">
+                            Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet
+                            sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+                        </p>
+                    </div>
+                    <!-- </a> -->
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="footer-form__wrapper">
+            <div class="footer-bg__img"></div>
+            <div class="footer-form__content container">
+                <form class="footer-form">
+                    <div class="footer-form__title">
+                        <h3>A quick way to discuss details</h3>
+                    </div>
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormName">Name*</label>
+                        <input id="footerFormName" class="footer-input__name" placeholder="Your name" type="text">
+                    </div>
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormPhone">Phone*</label>
+                        <input id="footerFormPhone" class="footer-input__phone" placeholder="Your phone number"
+                            type="text">
+                    </div>
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormEmail">Email</label>
+                        <input id="footerFormEmail" class="footer-input__email" placeholder="Your working email"
+                            type="text">
+                    </div>
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormMessage">Message*</label>
+                        <textarea id="footerFormMessage" class="footer-input__Message" placeholder="Your message"
+                            type="text"></textarea>
+                    </div>
+                    <div class="separate-data__wrapper separate-data-checkbox__wrapper">
+                        <input id="footerFormCheckbox" class="footer-input__Message" placeholder="Your message"
+                            type="checkbox" checked>
+                        <label for="footerFormCheckbox">I agree to receive communications from Createx Construction
+                            Bureau.</label>
+                    </div>
+                    <div class="footer-form-button__wrapper">
+                        <button class="main-btn call-wrapper__btn footer-form-btn" type="submit">send request</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper container">
+            <div class="footer-row__info">
+                <div class="footer-row-info__left">
+                    <div class="footer-row-info__left__content">
+                        <div class="footer-logo__social__icons">
+                            <div class="footer-logo__wrapper">
+                                <img src="./assets/icons/footer-logo-white.svg" alt="Logo">
+                            </div>
+                            <ul class="footer-social-icons__wrapper">
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/icons/whatsapp.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social__link" href="#">
+                                        <img src="./assets/icons/messanger.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social__link" href="#">
+                                        <img src="./assets/icons/facebook.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social__link" href="#">
+                                        <img src="./assets/icons/twitter.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social__link" href="#">
+                                        <img src="./assets/icons/youtube.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="footer-row-info__left__content__text">
+                            Createx Construction Bureau has been successfully operating in the USA <br> construction
+                            market since 2000. We are proud to offer you quality <br> construction and exemplary
+                            service. Our mission is to set the highest <br> standards for construction sphere.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-row-info__right">
+                    <div class="footer-title__wrapper">
+                        <h4>Let’s stay in touch</h4>
+                    </div>
+                    <div class="footer-input__wrapper">
+                        <input id="footerInput" class="footer-input" placeholder="Your email address " type="text">
+                        <input type="button" value="subscribe" class="footer-input__button">
+                    </div>
+                    <p class="footer-input-wrapper__description">
+                        *Subscribe to our newsletter to receive communications and early updates from Createx <br>
+                        Construction Bureau.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-row__links">
+                <div class="footer-row__first-column">
+                    <p class="first-column__tilte footer-row-column__title">
+                        HEAD OFFICE
+                    </p>
+                    <ul class="footer-column__list">
+                        <li>
+                            <span class="footer-clumn-list__info__tilte">
+                                Address:
+                            </span>
+                            <p class="footer-clumn-list__info">
+                                8502 Preston Rd. Inglewood, New York
+                            </p>
+                        </li>
+                        <li>
+                            <span class="footer-clumn-list__info__tilte">
+                                Call:
+                            </span>
+                            <p class="footer-clumn-list__info">
+                                (405) 555-0128
+                            </p>
+                        </li>
+                        <li>
+                            <span class="footer-clumn-list__info__tilte">
+                                Email:
+                            </span>
+                            <p class="footer-clumn-list__info">
+                                hello@createx.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-row__first-column">
+                    <p class="first-column__tilte footer-row-column__title">
+                        WHO WE ARE
+                    </p>
+                    <ul class="footer-column__list">
+                        <li>
+                            <a class="footer-column__link" href="./About.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="footer-column__link" href="#">Available Positions</a>
+                        </li>
+                        <li>
+                            <a class="footer-column__link" href="./Contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-row__first-column">
+                    <p class="first-column__tilte footer-row-column__title">
+                        OUR EXPERIENCE
+                    </p>
+                    <ul class="footer-column__list">
+                        <li>
+                            <a class="footer-column__link" href="./services.html">Services</a>
+                        </li>
+                        <li>
+                            <a class="footer-column__link" href="./work.html">Work</a>
+                        </li>
+                        <li>
+                            <a class="footer-column__link" href="./News.html">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-row__copyright">
+                <p class="copyright__text">
+                    © All rights reserved. Made with
+                    <span>
+                        <img src="./assets/icons/copyright-icon.svg">
+                    </span>
+                    by Createx Studio
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/news.js"></script>
+</body>
+
+</html>
