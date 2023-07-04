@@ -5,23 +5,35 @@ currentUrl[3] === 'Services.html' ? aboutPageId.classList.add('header-nav__activ
 
 
 // history slider
+// let slideItem = document.getElementsByClassName('history-way__link');
+// let slide1 = document.getElementById('slideContent1');
+// let slide2 = document.getElementById('slideContent2');
 
-let slideItem = document.getElementsByClassName('history-way__link');
-let slide1 = document.getElementById('slideContent1');
-let slide2 = document.getElementById('slideContent2');
+// function setSlide() {
 
-function setSlide() {
-    
-}
+// }
 
-if (slideItem[0].className == 'history-way__link history-link__active') {
-    slide1.style.cssText = 'display: block;'
-} else {
-    null
-}
+// if (slideItem[0].className == 'history-way__link history-link__active') {
+//     slide1.style.cssText = 'display: block;'
+// } else {
+//     null
+// }
 
-if (slideItem[1].className == 'history-way__link history-link__active') {
-    slide2.style.cssText = 'display: block;'
-} else {
-    null
-}
+// if (slideItem[1].className == 'history-way__link history-link__active') {
+//     slide2.style.cssText = 'display: block;'
+// } else {
+//     null
+// }
+
+
+// FIXED HEADER
+// const header = document.getElementById('header');
+// const headerBg = document.getElementById('header-bg__img');
+
+// window.addEventListener('scroll', () => {
+//     if (Math.round(pageYOffset) >= 300) {
+//         header.classList.add('header-fixed');
+//     } else {
+//         header.classList.remove('header-fixed');
+//     }
+// });
