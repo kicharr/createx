@@ -1,0 +1,169 @@
+.main-header {
+    position: relative;
+    background: transparent;
+    z-index: 5;
+    margin-bottom: 80px;
+}
+
+.header-bg__img {
+    background-image: url(../assets/images/services-page/background-interio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+}
+
+.main {
+    position: relative;
+    z-index: 5;
+}
+
+.offer__wrapper {
+    display: flex;
+    margin-bottom: 180px;
+}
+
+.offer-wrapper__image {
+    margin-right: 105px;
+}
+
+.offer-wrapper__content {}
+
+.offer-wrapper-title__wrapper {
+    margin-bottom: 60px;
+}
+
+.offer-wrapper-title__wrapper h3 {
+    color: var(--main-title-color);
+
+    font-size: 46px;
+
+    font-weight: 900;
+    line-height: 130%;
+}
+
+.offer-tabs__wrapper {}
+
+.offer-tab {
+    overflow: hidden;
+}
+
+
+.offer-row__title {
+    display: flex;
+
+    color: var(--main-title-color);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+
+    position: relative;
+    z-index: 10;
+    background-color: #FFFFFF;
+
+}
+
+.offer-row__title h4 {
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.offer-row-image {
+    max-width: 24px;
+    width: 100%;
+
+
+    background-image: url(../assets/images/services-page/Plus.svg);
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+    background-size: contain;
+
+    transition: all .3s linear;
+}
+
+.offer-tab__content {
+    padding-left: 44px;
+    margin-top: 12px;
+    overflow: hidden;
+    transform: translateY(-150%);
+    height: 0px;
+
+    position: relative;
+    z-index: 1;
+
+    transition: all .3s linear;
+
+}
+
+.offer-tab__text {
+    margin-bottom: 28px;
+}
+
+.doing__wrapper {
+    margin-bottom: 200px;
+}
+
+.doing-title {
+    margin-bottom: 60px;
+}
+
+.doing-title h3 {
+    text-align: start;
+    font-weight: 700;
+}
+
+
+.offer-wrapper-title__wrapper {}
+
+.doing-title {}
+
+.doing-points__wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.doing-point {
+    transition: all .3s linear;
+}
+
+path {
+    transition: all .3s linear;
+}
+
+.doing-point-image__wrapper {}
+
+.doing-point-title__wrapper h5 {
+    color: var(--main-title-color);
+    margin: 16px 0 8px;
+    font-size: 20px;
+
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.doing-point-description__wrapper {}
+
+.doing-point-description__text {
+    color: #787A80;
+    font-size: 16px;
+
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.doing-point1:hover path {
+    fill: #FF5A30;
+}
+
+.doing-point2:hover path {
+    fill: #FF5A30;
+}
+
+/* <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="none">
+<circle opacity="0.06" cx="58" cy="58" r="58" fill="#FF5A30"/>
+<circle opacity="0.12" cx="58" cy="58" r="42" fill="#FF5A30"/>
+</svg> */
