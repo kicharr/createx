@@ -65,3 +65,24 @@
     height: 100%;
 
 }
+
+.news-pages__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+
+.news-pages-list__link {
+    color: #424551;
+    
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.news-pages-list-link__active {
+    color: var(--main-orange-color);
+}
