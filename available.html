@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" type="image/x-icon" sizes="16x16" href="./assets/icons/favicon.svg">
     <link rel="stylesheet" href="./styles/all.css">
     <link rel="stylesheet" href="./styles//normalize.css">
-    <link rel="stylesheet" href="./styles/news.css">
-    <title>News - CreateX</title>
+    <link rel="stylesheet" href="./styles/available.css">
+    <title>Available positions - CreateX</title>
 </head>
 
 <body>
@@ -90,6 +91,7 @@
 
 
     <main class="main">
+
         <section class="main__wrapper container">
             <ul class="breadcrumbs-wrapper">
                 <li>
@@ -99,89 +101,220 @@
                     /
                 </li>
                 <li>
-                    <a class="breadcrumbs-link breadcrumbs-link__current" href="#">News</a>
+                    <a class="breadcrumbs-link breadcrumbs-link__main" href="./about.html">About Us</a>
+                </li>
+                <li class="breadcrumbs-link__current">
+                    /
+                </li>
+                <li>
+                    <a class="breadcrumbs-link breadcrumbs-link__current" href="#">Available Positions</a>
                 </li>
             </ul>
             <section class="main-wrapper__content">
                 <div class="main-title__wrapper">
                     <h1>
-                        NEWS
+                        AVAILABLE <br>
+                        POSITIONS
                     </h1>
                 </div>
                 <p class="main-title__description">
-                    Stay tuned with our news, expert tips and articles.
+                    Build your career with Createx Construction Bureau.
                 </p>
             </section>
         </section>
 
 
+        <section class="available-content container">
+            <div id="vacanciesWrapper" class="positions-items__wrapper">
 
-        <section class="news-list container">
-            <div class="section-title__wrapper">
-                <h2>Categories</h2>
-            </div>
+                <div id="vacancyCard" class="positions-item">
+                    <div class="item-data">
+                        <div class="item-data__info">
+                            <img class="item-data__img" src="./assets/images/available/geo.svg">
 
-            <div id="news-filter__nav" class="news-filter__nav">
-                <button id="allNews" class="news-filter-nav__button filter-btn__active" type="button">All News</button>
-                <button id="companyNews" class="news-filter-nav__button" type="button">Company News</button>
-                <button id="innovationNews" class="news-filter-nav__button" type="button">Innovation</button>
-                <button id="industryNews" class="news-filter-nav__button" type="button">Industry News</button>
-                <button id="expertNews" class="news-filter-nav__button" type="button">Expert Tips</button>
-                <button id="MarketingNews" class="news-filter-nav__button" type="button">Marketing</button>
-            </div>
-
-
-            <div id="newsCardWrapper" class="news-wrapper">
-                <div id="newsCard" class="big-news news-card">
-                    <img class="big-news__preview" src="./assets/images/big-news-homePage.jpg" alt="News image">
-                    <div class="big-news-description__wrapper">
-                        <div class="news-title__wrapper">
-                            <a id="newsCardName" href="#" class="news-card__link big-news-card__link ">
-                                How to Build Climate Change- Resilient Infrastructure
-                            </a>
-                        </div>
-                        <div class="news-data__wrapper">
-                            <p class="news-type__text">Industry News</p>
-                            <span></span> 
-                            <p class="news-date__text">June 24, 2020</p>
+                            <p class="item-data item-data__city">
+                                New York
+                            </p>
                             <span></span>
+                            <img class="item-data__img" src="./assets/images/available/clock.svg">
+                            <p class="item-data item-data__time">
 
-                            <div class="news-comments__wrapper">
-                                <img src="./assets/icons/comments.svg">
-                                <p class="news-type__text news-comment__text">4 comments</p>
-                            </div>
+                                Full Time
+                            </p>
                         </div>
-                        <p class="big-news-card__description">
-                            Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet
-                            sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
-                        </p>
+                        <p class="item-data-title">Heavy Equipment Operator</p>
                     </div>
+
+
+                    <div class="item-apply__buttons">
+                        <button class="item-apply-btn">Apply now</button>
+                    </div>
+
                 </div>
+
             </div>
 
-            <ul class="news-pages__list">
-                <li>
-                    <a class="news-pages-list__link news-pages-list-link__active" href="#">1</a>
-                </li>
-                <li>
-                    <a class="news-pages-list__link" href="#">2</a>
-                </li>
-                <li>
-                    <a class="news-pages-list__link" href="#">3</a>
-                </li>
-                <li>
-                    <a class="news-pages-list__link" href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/icons/news-pages.svg">
-                    </a>
-                </li>    
-            </ul>
+
+            <aside class="positions-form__content">
+                <div class="section-title__wrapper">
+                    <h3>Didn’t find what you were <br> looking for?</h3>
+                </div>
+                <p class="positions-form__description">
+                    Send your CV or subscribe to our newsletter to <br> receive information about new vacancies.
+                </p>
+                <div class="positions-form-buttons__wrapper">
+                    <button id="subscribeModalBtn" class="item-apply-btn item-apply-btn__subscribe">subscribe</button>
+                    <button id="subscribeModalCV" class="item-apply-btn item-apply-btn__send">send cv</button>
+                </div>
+            </aside>
         </section>
 
 
+        <div class="modals__wrapper">
 
+            <div id="subscribeModal" class="subscribe-form__modal">
+                <button id="closeSubscribeModal" class="close-icon__button">
+                    <img src="./assets/images/available/close-modal.svg">
+                </button>
+                <div class="modal-title__wrapper">
+                    <h3>Subscribe to our newsletter</h3>
+
+
+                </div>
+                <div class="inputs__wrapper">
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormName">Name*</label>
+                        <input id="footerFormName" class="footer-input__name modal-input" placeholder="Your name"
+                            type="text">
+                    </div>
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormPhone">Email*</label>
+                        <input id="footerFormPhone" class="footer-input__email modal-input"
+                            placeholder="Your working email" type="text">
+                    </div>
+                </div>
+
+                <button class="footer-form-btn modal-btn">SEND</button>
+            </div>
+
+
+            <div id="sendCVModal" class="subscribe-form__modal send-form__modal">
+                <button id="closeSubscribeModalCV" class="close-icon__button">
+                    <img src="./assets/images/available/close-modal.svg">
+                </button>
+                <div class="modal-title__wrapper">
+                    <h3>Send your CV</h3>
+                </div>
+                <div class="inputs__wrapper">
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormName">Name*</label>
+                        <input id="footerFormName" class="footer-input__name modal-input" placeholder="Your name"
+                            type="text">
+                    </div>
+
+                    <label class="separate-data__wrapper interested-wrpaper">
+                        <p class="input-title">Location*</p>
+                        <input id="selectLocation" class="contacts-form-input contacts-form-input__location"
+                            type="text" placeholder="Your Country">
+                        <img id="selectArrowLocation" class="select-arrow"
+                            src="./assets/images/contacts-page/custom-select__arrow.svg">
+                        <ul id="chooseLocationItem" class="interested-select">
+                            <li>
+                                <a class="interested-select__item" href="#">
+                                    Russia
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="interested-select__item" href="#">
+                                    Germany
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="interested-select__item" href="#">
+                                    England
+                                </a>
+
+                            </li>
+                        </ul>
+                    </label>
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormPhone">Phone*</label>
+                        <input id="footerFormPhone" class="footer-input__email modal-input"
+                            placeholder="Your phone number" type="text">
+                    </div>
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormPhone">Email*</label>
+                        <input id="footerFormPhone" class="footer-input__email modal-input"
+                            placeholder="Your working email" type="text">
+                    </div>
+
+                    <div class="separate-data__wrapper">
+                        <label class="footer-form__label" for="footerFormMessage">Сovering letter</label>
+                        <textarea rows="2" id="footerFormMessage" class="footer-input__Message"
+                            placeholder="Your covering letter" type="text"></textarea>
+                    </div>
+
+                    <div class="separate-data__wrapper">
+                        <div class="input__wrapper">
+                            <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                            <label for="input__file" class="input__file-button">
+                               <span class="input__file-icon-wrapper"><img class="input__file-icon" src="./assets/images/available/Attach.svg" alt="Выбрать файл"></span>
+                               <span class="input__file-button-text">Attach your CV*</span>
+                            </label>
+                         </div>
+                    </div>
+                </div>
+                <button class="footer-form-btn modal-btn">SEND</button>
+            </div>
+
+        </div>
+
+
+
+        <section class="values container">
+            <div class="section-title__wrapper section-title-wrapper__section">
+                <h2>Employee benefits</h2>
+                <p class="section-tilte__subtitle">
+                    There’s always room for talent.
+                </p>
+            </div>
+            <div class="values-card__wrapper">
+                <div class="values-card">
+                    <img class="values-card-icon" src="./assets/images/available/ic-brain.svg" alt="Quality icon">
+                    <div class="card-title__wrapper">
+                        <h4>Training</h4>
+                        <div class="card-description">
+                            Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+                        </div>
+                    </div>
+                </div>
+
+                <span class="card-separator"></span>
+                <div class="values-card">
+                    <img class="values-card-icon" src="./assets/images/available/ic-success.svg" alt="Quality icon">
+                    <div class="card-title__wrapper">
+                        <h4>Professional Growth</h4>
+                        <div class="card-description">
+                            Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor
+                            est ea.
+                        </div>
+                    </div>
+                </div>
+                <span class="card-separator"></span>
+                <div class="values-card">
+                    <img class="values-card-icon" src="./assets/images/available/ic-budget.svg" alt="Quality icon">
+                    <div class="card-title__wrapper">
+                        <h4>Growing Salary</h4>
+                        <div class="card-description">
+                            Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident
+                            ea ad.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <section class="footer-form__wrapper">
@@ -223,8 +356,10 @@
                 </form>
             </div>
         </section>
-
     </main>
+
+
+
     <footer class="footer">
         <div class="footer-wrapper container">
             <div class="footer-row__info">
@@ -360,7 +495,7 @@
         </div>
     </footer>
 
-    <script src="./js/news.js"></script>
+    <script src="./js/vacancy.js"></script>
 </body>
 
 </html>
