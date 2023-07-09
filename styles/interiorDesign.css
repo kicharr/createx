@@ -70,6 +70,7 @@
 .offer-row__title h4 {
     padding-left: 20px;
     cursor: pointer;
+    color: var(--main-title-color);
 }
 
 .offer-row-image {
@@ -123,6 +124,7 @@
 
 .doing-points__wrapper {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -130,11 +132,15 @@
     transition: all .3s linear;
 }
 
-path {
-    transition: all .3s linear;
+
+.doing-point-image__wrapper {
+    max-width: 53px;
+    height: 53px;
+    width: 100%;
+    display: inline-block;
 }
 
-.doing-point-image__wrapper {}
+.doing-point__image {}
 
 .doing-point-title__wrapper h5 {
     color: var(--main-title-color);
@@ -145,8 +151,6 @@ path {
     line-height: 150%;
 }
 
-.doing-point-description__wrapper {}
-
 .doing-point-description__text {
     color: #787A80;
     font-size: 16px;
@@ -155,15 +159,282 @@ path {
     line-height: 160%;
 }
 
-.doing-point1:hover path {
-    fill: #FF5A30;
+.benefits__wrapper {
+    background-color: var(--main-title-color);
+    color: #FFFFFF;
+    padding: 80px 0 100px;
+
+    position: relative;
+    z-index: 5;
+    margin-bottom: 154px;
 }
 
-.doing-point2:hover path {
-    fill: #FF5A30;
+.benefits-btn {
+    position: absolute;
+    bottom: -31.5px;
+    left: calc(50vw - 191px);
+    z-index: 6;
+    padding: 21.5px 112px;
 }
 
-/* <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewBox="0 0 116 116" fill="none">
-<circle opacity="0.06" cx="58" cy="58" r="58" fill="#FF5A30"/>
-<circle opacity="0.12" cx="58" cy="58" r="42" fill="#FF5A30"/>
-</svg> */
+.benefits__wrapper h2,
+h4 {
+    color: #FFFFFF;
+}
+
+.card-title__wrapper h4 {
+    color: #FFFFFF;
+}
+
+.project {
+    /* padding-bottom: 220px; */
+}
+
+.portfolio-slider {
+    display: flex;
+    gap: 30px;
+}
+
+.portfolio-card__image {
+    margin-bottom: 16px;
+    margin-left: 0;
+    max-width: 390px;
+    width: 100%;
+    height: 345px;
+}
+
+.portfolio-card__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: var(--main-title-color);
+}
+
+.portfolio-card__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+    color: #787A80;
+}
+
+.portfolio-card__button {
+    padding: 0 32px;
+    width: 172px;
+    height: 44px;
+    text-align: center;
+    background-color: transparent;
+    color: var(--main-orange-color);
+    border: 1px solid var(--main-orange-color);
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    line-height: 44px;
+    margin: 0 auto;
+    display: none;
+
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: all .5s linear;
+}
+
+.portfolio-card__button a {
+    font-size: 14px;
+    color: var(--main-orange-color);
+}
+
+.portfolio-card__button a:hover {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.call-wrapper-portfolio {
+    margin: 80px 0 120px;
+}
+
+
+.portfolio-card {
+    background: #FFFFFF;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+
+    position: relative;
+    min-height: 440px;
+    width: 100%;
+    transition: all 1s linear;
+}
+
+.portfolio-card__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 16px 24px;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.portfolio-card:hover .portfolio-card__button {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.call-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+
+    color: var(--main-title-color);
+}
+
+.call-wrapper__btn {
+    background-color: var(--main-orange-color);
+}
+
+.call-wrapper__btn a {
+    color: #FFFFFF;
+}
+
+.call-wrapper__btn a:hover {
+    color: var(--main-orange-color);
+    opacity: 1;
+}
+
+.call-wrapper__btn:hover {
+    background-color: transparent;
+    color: var(--main-orange-color);
+    border: 1px solid var(--main-orange-color);
+}
+
+
+
+/* pricing table */
+
+.pricing-info__wrapper {
+
+    background-image: url(../assets/images/services-page/pricing-img__bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+
+    padding: 80px 0 0;
+    background-color: #F4F5F6;
+}
+
+
+table.iksweb {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+    border-spacing: 10px;
+
+    border-radius: 4px;
+    border: 1px solid  #E5E8ED;
+    background: #FFFFFF;
+    /* shadow/small */
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+    margin-bottom: 120px;
+}
+
+table.iksweb,
+table.iksweb td,
+table.iksweb th {
+    /* border: 1px solid #595959; */
+}
+
+table.iksweb td,
+table.iksweb th {
+    width: 36px;
+    height: 58px;
+}
+
+table td {
+    margin: 0 auto;
+    text-align: center;
+    padding: 24px;
+}
+
+table tr td:first-child {
+    padding-left: 24px;
+    width: 40%;
+}
+
+table span {
+    color: var(--main-title-color);
+    text-align: center;
+    font-family: 'Ubuntu' sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+td:first-child {
+    text-align: left;
+
+}
+
+tr {
+    padding: 10px;
+}
+
+
+.table-btn {
+    border-radius: 4px;
+    border: 1px solid var(--main-orange-color);
+    background-color: transparent;
+    color: var(--main-orange-color);
+    text-transform: uppercase;
+    padding: 9px 24px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+
+    transition: all .3s linear;
+}
+
+.table-btn:hover {
+    background-color: var(--main-orange-color);
+    color: #FFFFFF;
+}
+
+table tr:nth-child(even) {
+    background-color: #F4F5F6;
+}
+
+.iksweb {
+    background-color: #FFFFFF;
+}
+
+.partners {
+    padding-bottom: 120px;
+}
+
+.partners__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partner {
+    transition: all .3s linear;
+}
+
+.partner:hover {
+    transform: scale(1.2);
+}
