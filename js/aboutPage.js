@@ -3,37 +3,57 @@ let aboutPageId = document.getElementById('aboutPageId');
 currentUrl[3] === 'Services.html' ? aboutPageId.classList.add('header-nav__active') : aboutPageId
     .classList.add('header-nav__active');
 
+// const teamWrapper = document.getElementById('teamWrapper');
+// console.log(teamWrapper);
 
-// history slider
-// let slideItem = document.getElementsByClassName('history-way__link');
-// let slide1 = document.getElementById('slideContent1');
-// let slide2 = document.getElementById('slideContent2');
+// employees
+let employeesUrl = '../userData/employees.json';
+let responce = fetch(employeesUrl).then(data => data.json()).then(res => setResponce(res));
 
-// function setSlide() {
+const employeesArray = [];
 
-// }
+function setResponce(res) {
+    employeesArray.push(res.employees);
 
-// if (slideItem[0].className == 'history-way__link history-link__active') {
-//     slide1.style.cssText = 'display: block;'
-// } else {
-//     null
-// }
+    let teamWrapper = document.getElementById('teamWrapper')
+    let employeeCard = document.getElementById('employeeCard');
 
-// if (slideItem[1].className == 'history-way__link history-link__active') {
-//     slide2.style.cssText = 'display: block;'
-// } else {
-//     null
-// }
+    let employeeName = document.querySelector('.worker-name');
+    let employeePhoto = document.querySelector('.worker-image');
+    let employeePosition = document.querySelector('.worker-position');
 
 
-// FIXED HEADER
-// const header = document.getElementById('header');
-// const headerBg = document.getElementById('header-bg__img');
 
-// window.addEventListener('scroll', () => {
-//     if (Math.round(pageYOffset) >= 300) {
-//         header.classList.add('header-fixed');
-//     } else {
-//         header.classList.remove('header-fixed');
-//     }
-// });
+    employeesArray.forEach(element => {
+        for (let i = 0; i < element.length; i++) {
+            let employeeCardClone = employeeCard.cloneNode(true);
+            teamWrapper.append(employeeCardClone);
+
+            employeePhoto.setAttribute('src', element[i].photo);
+            employeeName.innerHTML = element[i].name;
+            employeePosition.innerHTML = element[i].position;
+        }
+    });
+}
+
+document.getElementById('loaderWrapper').addEventListener('click', () => {
+    document.getElementById('loaderCircle').classList.add('loader_active')
+
+    setTimeout(() => {
+        if (teamWrapper.className.split(' ')[1] === 'employees-hideen__wrapper') {
+            teamWrapper.classList.remove('employees-hideen__wrapper');
+
+            // console.log('yes');
+        } else {
+            // console.log('no');
+        }
+    }, 1000)
+
+
+})
+
+
+
+
+
+

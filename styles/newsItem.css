@@ -120,13 +120,15 @@
     padding-left: 58px;
 }
 
+.custom-list {
+    list-style-image: url(../assets/icons/check.svg);
+}
+
 .custom-list li {
     list-style-type: disc;
     list-style-position: inside;
 }
 
 .custom-list li::marker {
-    background-image: url(../assets/icons/check.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 20px;
 }

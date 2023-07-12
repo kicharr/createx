@@ -318,6 +318,14 @@
     grid-row-gap: 60px;
 
     margin-bottom: 80px;
+
+
+}
+
+.employees-hideen__wrapper {
+    max-height: 900px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .team-card {
@@ -414,7 +422,7 @@
     left: 0;
 
     transition: all .3s linear;
-   
+
 }
 
 .map-country:hover {
@@ -435,7 +443,7 @@
 .map-country__canada {
     top: 23%;
     left: 13%;
-    
+
 }
 
 .map-country__usa {
@@ -471,4 +479,41 @@
     top: 0;
     z-index: 100;
     width: 100%;
+}
+
+.load-more-button__wrapper {
+    justify-content: center;
+    margin: 0 auto 100px;
+}
+
+.loader__wrapper {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    gap: 16px;
+    margin: 0 auto;
+    transition: all .5s linear;
+}
+
+
+.loader-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+
+    color: #424551;
+}
+
+.loader_active {
+    animation: loaderActive 2s 1;
+}
+
+@keyframes loaderActive {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
