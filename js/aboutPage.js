@@ -4,7 +4,7 @@ currentUrl[3] === 'Services.html' ? aboutPageId.classList.add('header-nav__activ
 
 
 // employees
-let employeesUrl = '../userData/employees.json';
+let employeesUrl = 'userData/employees.json';
 let responce = fetch(employeesUrl)
     .then(data => data.json())
     .then(res => setResponce(res));
